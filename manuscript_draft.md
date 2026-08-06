@@ -1,9 +1,8 @@
 # Spatiotemporal Dynamics and Hotspot Analysis of Atmospheric Pollutants in Nepal Using Sentinel-5P and Google Earth Engine (2019–2026)
 
 **Author:** Suraj Tharu Chaudhary  
-**Affiliation:** [Your Institution/Department — e.g., Department of Environmental Science, [University Name], Nepal]  
-**Correspondence:** [your.email@institution.edu.np]  
-**ORCID:** [https://orcid.org/xxxx-xxxx-xxxx-xxxx]  
+**Affiliation:** Purbanchal University, Nepal  
+**Correspondence:** suraj.xaudhary@gmail.com  
 **Submitted to:** [Target Journal Name]  
 **Manuscript Type:** Original Research Article
 
