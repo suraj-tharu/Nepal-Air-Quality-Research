@@ -1,4 +1,4 @@
-﻿# Spatiotemporal Dynamics and Hotspot Analysis of Atmospheric Pollutants in Nepal Using Sentinel-5P and Google Earth Engine (2019–2026)
+# Spatiotemporal Dynamics and Hotspot Analysis of Atmospheric Pollutants in Nepal Using Sentinel-5P and Google Earth Engine (2019–2026)
 
 **Author:** Suraj Tharu Chaudhary  
 **Affiliation:** [Your Institution/Department — e.g., Department of Environmental Science, [University Name], Nepal]  
@@ -307,7 +307,7 @@ The Terai region, despite housing over half of Nepal's population and recording 
 
 ## Data Availability Statement
 
-The complete Google Earth Engine JavaScript extraction scripts (10 scripts) and Python statistical analysis pipeline (14 scripts) used in this study are archived at: **[Insert GitHub Repository URL — upload before submission]** under an MIT open-source license. Raw Sentinel-5P TROPOMI Level-3 data are publicly available from the [Copernicus Open Access Hub](https://scihub.copernicus.eu/). ERA5 data are from the [ECMWF Climate Data Store](https://cds.climate.copernicus.eu/). WorldPop 2020 data are at [www.worldpop.org](https://www.worldpop.org/). COVID lockdown analysis, validation summary, and all processed CSVs are available in the GitHub repository's `data/processed/` folder.
+The complete Google Earth Engine JavaScript extraction scripts (10 scripts) and Python statistical analysis pipeline (14 scripts) used in this study are archived at: https://github.com/suraj-tharu/Nepal-Air-Quality-Research under an MIT open-source license. Raw Sentinel-5P TROPOMI Level-3 data are publicly available from the [Copernicus Open Access Hub](https://scihub.copernicus.eu/). ERA5 data are from the [ECMWF Climate Data Store](https://cds.climate.copernicus.eu/). WorldPop 2020 data are at [www.worldpop.org](https://www.worldpop.org/). COVID lockdown analysis, validation summary, and all processed CSVs are available in the GitHub repository's `data/processed/` folder.
 
 ## Author Contributions
 
