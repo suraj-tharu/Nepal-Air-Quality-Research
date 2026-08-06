@@ -1,0 +1,31 @@
+Pollutant,Zone,Trend_Breakpoints
+NO2,High_Himal,2026-02
+NO2,High_Mountains,2022-05
+NO2,Middle_Mountains,"2021-02, 2023-03"
+NO2,Siwalik,2021-02
+NO2,Terai,2021-02
+SO2,High_Himal,None
+SO2,High_Mountains,2024-01
+SO2,Middle_Mountains,2024-01
+SO2,Siwalik,2024-01
+SO2,Terai,2024-01
+CO,High_Himal,"2021-12, 2026-02"
+CO,High_Mountains,"2021-12, 2025-09"
+CO,Middle_Mountains,2025-09
+CO,Siwalik,2022-10
+CO,Terai,"2023-08, 2025-09"
+O3,High_Himal,2021-02
+O3,High_Mountains,2021-02
+O3,Middle_Mountains,2021-02
+O3,Siwalik,2021-02
+O3,Terai,2021-07
+HCHO,High_Himal,None
+HCHO,High_Mountains,"2022-05, 2025-09"
+HCHO,Middle_Mountains,2020-09
+HCHO,Siwalik,"2021-12, 2026-02"
+HCHO,Terai,2021-12
+UVAI,High_Himal,2022-05
+UVAI,High_Mountains,2022-05
+UVAI,Middle_Mountains,2021-12
+UVAI,Siwalik,2021-07
+UVAI,Terai,2021-07
