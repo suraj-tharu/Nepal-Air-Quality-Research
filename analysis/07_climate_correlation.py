@@ -97,13 +97,37 @@ def run_correlation_analysis():
 
         p_matrix = p_matrix.astype(float)
 
-        # Plot
+        # Plot Pearson
         plot_correlation_heatmap(
             sub_corr,
             title=f"Pearson Correlation: Pollutants vs Climate ({zone})",
             p_matrix=p_matrix,
             mask_insignificant=True,
             save_path=corr_out / f"Corr_Pearson_{zone}",
+        )
+
+        # 1.5 Spearman Correlation
+        spearman_matrix = merged[pol_cols + clim_cols].corr(method="spearman")
+        sub_spearman = spearman_matrix.loc[pol_cols, clim_cols]
+        
+        p_matrix_spearman = pd.DataFrame(index=pol_cols, columns=clim_cols)
+        for p in pol_cols:
+            for c in clim_cols:
+                mask = ~merged[p].isna() & ~merged[c].isna()
+                if mask.sum() > 2:
+                    r, pval = stats.spearmanr(merged.loc[mask, p], merged.loc[mask, c])
+                    p_matrix_spearman.loc[p, c] = pval
+                else:
+                    p_matrix_spearman.loc[p, c] = 1.0
+                    
+        p_matrix_spearman = p_matrix_spearman.astype(float)
+        
+        plot_correlation_heatmap(
+            sub_spearman,
+            title=f"Spearman Correlation: Pollutants vs Climate ({zone})",
+            p_matrix=p_matrix_spearman,
+            mask_insignificant=True,
+            save_path=corr_out / f"Corr_Spearman_{zone}",
         )
 
         # 2. Partial Correlation (controlling for other climate vars)

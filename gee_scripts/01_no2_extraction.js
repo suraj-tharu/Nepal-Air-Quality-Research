@@ -53,10 +53,10 @@ var createMonthlyComposite = function(year, month) {
     .filterDate(startDate, endDate)
     .filterBounds(nepalGeom);
   
-  // QA filtering: keep only low-cloud pixels (cloud_fraction < 0.3)
+  // QA filtering: Sentinel-5P standard recommendation for NO2 is qa_value > 0.75
   var filtered = collection.map(function(img) {
-    var cf = img.select('cloud_fraction');
-    var mask = cf.lt(0.3);
+    var qa = img.select('qa_value');
+    var mask = qa.gt(0.75);
     return img.updateMask(mask);
   });
   

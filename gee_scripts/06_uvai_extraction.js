@@ -40,8 +40,14 @@ var createMonthlyComposite = function(year, month) {
     .filterDate(startDate, endDate)
     .filterBounds(nepalGeom);
   
-  // No QA filtering for UVAI — use all valid pixels
-  var median = collection.select('absorbing_aerosol_index')
+  // QA filtering: Sentinel-5P standard recommendation for UVAI is qa_value > 0.8
+  var filtered = collection.map(function(img) {
+    var qa = img.select('qa_value');
+    var mask = qa.gt(0.8);
+    return img.updateMask(mask);
+  });
+  
+  var median = filtered.select('absorbing_aerosol_index')
     .median()
     .clip(nepal)
     .set('year', year)

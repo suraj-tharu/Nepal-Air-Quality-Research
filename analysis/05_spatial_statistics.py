@@ -53,42 +53,86 @@ def run_spatial_stats():
 
     print("""
     [INFO] Spatial statistics (Moran's I, Getis-Ord Gi*) require vector 
-    features with sufficient neighbors (e.g., districts or grid cells).
-    This script is a template designed to run on district-level data once
-    exported from GEE.
+    features with sufficient neighbors. This script assumes district-level 
+    or grid-level data exported from GEE.
     """)
 
-    # Example workflow (commented out until district data is available):
-    """
-    # 1. Load District Polygons
-    districts = gpd.read_file("path/to/nepal_districts.shp")
+    # 1. Load spatial polygons (e.g., Districts)
+    # Note: Replace with actual path to Nepal districts shapefile when available
+    shapefile_path = RAW_DIR / "shapefiles" / "nepal_districts.shp"
+    
+    if not shapefile_path.exists():
+        print(f"[WARNING] Shapefile not found at {shapefile_path}. Skipping spatial stats execution.")
+        print("Please ensure the shapefile and district-level CSVs are present.")
+        return
+
+    districts = gpd.read_file(shapefile_path)
     
     # 2. Build Spatial Weights
     w = build_spatial_weights(districts, weights_type='queen')
     
     for pol in POLLUTANTS.keys():
-        # Load pollutant data aggregated by district
-        df = pd.read_csv(f"data/processed/{pol}_district_ts.csv")
+        # Load pollutant data aggregated by district (assumes this is exported from GEE)
+        csv_path = PROCESSED_DIR / f"{pol}_district_ts.csv"
+        
+        if not csv_path.exists():
+            print(f"  -> Skipping {pol}, district data not found.")
+            continue
+            
+        print(f"  -> Running Spatial Stats for {pol}")
+        df = pd.read_csv(csv_path)
         
         # Merge with geometry
-        gdf = districts.merge(df, on='district_id')
+        # Assumes a common key like 'DISTRICT' or 'ADM2_NAME'
+        merge_col = 'DISTRICT' if 'DISTRICT' in df.columns else df.columns[0]
+        gdf = districts.merge(df, left_on='DISTRICT', right_on=merge_col)
+        
+        mean_col = f'{pol}_mean'
+        if mean_col not in gdf.columns:
+            continue
+            
+        y = gdf[mean_col].values
         
         # Calculate Global Moran's I
-        y = gdf[f'{pol}_mean'].values
         mi = Moran(y, w)
-        print(f"Global Moran's I for {pol}: {mi.I:.3f} (p={mi.p_sim:.3f})")
+        print(f"    Global Moran's I: {mi.I:.3f} (p={mi.p_sim:.3f})")
         
         # Calculate Local Moran's I (LISA)
         lisa = Moran_Local(y, w)
         
-        # Calculate Getis-Ord Gi*
+        # Calculate Getis-Ord Gi* (Hotspot Analysis)
         go = G_Local(y, w, star=True)
+        
+        # Add results to GeoDataFrame
+        gdf['lisa_I'] = lisa.Is
+        gdf['lisa_q'] = lisa.q
+        gdf['lisa_p'] = lisa.p_sim
+        gdf['gi_star'] = go.Gs
+        gdf['gi_p'] = go.p_sim
+        
+        # Save results
+        gdf.drop(columns='geometry').to_csv(spatial_out / f"{pol}_spatial_stats_results.csv", index=False)
         
         # Plotting (using splot)
         fig, ax = plt.subplots(figsize=(10, 8))
         lisa_cluster(lisa, gdf, p=0.05, ax=ax)
-        plt.savefig(spatial_out / f"{pol}_LISA_Cluster.png")
-    """
+        ax.set_title(f"Local Moran's I (LISA) Cluster Map - {pol}")
+        plt.savefig(spatial_out / f"{pol}_LISA_Cluster.png", dpi=300, bbox_inches='tight')
+        plt.close(fig)
+        
+        # Plot Getis-Ord Gi*
+        fig, ax = plt.subplots(figsize=(10, 8))
+        # Significance filter
+        sig = gdf['gi_p'] < 0.05
+        hotspots = gdf[sig & (gdf['gi_star'] > 0)]
+        coldspots = gdf[sig & (gdf['gi_star'] < 0)]
+        
+        gdf.plot(color='lightgrey', edgecolor='white', ax=ax)
+        hotspots.plot(color='red', ax=ax, label='Hot Spot (95%)')
+        coldspots.plot(color='blue', ax=ax, label='Cold Spot (95%)')
+        ax.set_title(f"Getis-Ord Gi* Hotspot Analysis - {pol}")
+        plt.savefig(spatial_out / f"{pol}_Getis_Ord_Hotspots.png", dpi=300, bbox_inches='tight')
+        plt.close(fig)
 
 
 if __name__ == "__main__":

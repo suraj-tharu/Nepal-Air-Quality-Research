@@ -39,8 +39,14 @@ var createMonthlyComposite = function(year, month) {
     .filterDate(startDate, endDate)
     .filterBounds(nepalGeom);
   
-  // L3 data is already quality-filtered by ESA; use directly
-  var median = collection.select('tropospheric_HCHO_column_number_density')
+  // QA filtering: Sentinel-5P standard recommendation for HCHO is qa_value > 0.5
+  var filtered = collection.map(function(img) {
+    var qa = img.select('qa_value');
+    var mask = qa.gt(0.5);
+    return img.updateMask(mask);
+  });
+  
+  var median = filtered.select('tropospheric_HCHO_column_number_density')
     .median()
     .clip(nepal)
     .set('year', year)

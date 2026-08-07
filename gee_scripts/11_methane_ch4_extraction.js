@@ -1,19 +1,22 @@
 /**
  * =============================================================================
- * Script 03: CO (Carbon Monoxide) Extraction from Sentinel-5P TROPOMI
+ * Script 11: CH₄ (Methane) Extraction from Sentinel-5P TROPOMI
  * =============================================================================
  * 
- * Product: COPERNICUS/S5P/OFFL/L3_CO
- * Band: CO_column_number_density
- * QA Filter: Uses qa_value band threshold
+ * Product: COPERNICUS/S5P/OFFL/L3_CH4
+ * Band: CH4_column_volume_mixing_ratio_dry_air
+ * QA Filter: qa_value > 0.5
+ * 
+ * Outputs: Monthly median composites + zonal stats (physiographic & province)
  * =============================================================================
  */
 
 var START_DATE = '2019-01-01';
 var END_DATE = '2026-12-31';
-var EXPORT_FOLDER = 'Nepal_S5P_CO';
+var EXPORT_FOLDER = 'Nepal_S5P_CH4';
 var SCALE = 5000;
 
+// ----- NEPAL BOUNDARY & ZONES -----
 var countries = ee.FeatureCollection('FAO/GAUL/2015/level0');
 var nepal = countries.filter(ee.Filter.eq('ADM0_NAME', 'Nepal'));
 var nepalGeom = nepal.geometry();
@@ -31,22 +34,23 @@ var zones = ee.Image(0)
 var admin1 = ee.FeatureCollection('FAO/GAUL/2015/level1');
 var provinces = admin1.filter(ee.Filter.eq('ADM0_NAME', 'Nepal'));
 
+// ----- MONTHLY COMPOSITE FUNCTION -----
 var createMonthlyComposite = function(year, month) {
   var startDate = ee.Date.fromYMD(year, month, 1);
   var endDate = startDate.advance(1, 'month');
   
-  var collection = ee.ImageCollection('COPERNICUS/S5P/OFFL/L3_CO')
+  var collection = ee.ImageCollection('COPERNICUS/S5P/OFFL/L3_CH4')
     .filterDate(startDate, endDate)
     .filterBounds(nepalGeom);
   
-  // QA filtering: Sentinel-5P standard recommendation for CO is qa_value > 0.5
+  // QA filtering: Sentinel-5P standard recommendation for CH4 is qa_value > 0.5
   var filtered = collection.map(function(img) {
     var qa = img.select('qa_value');
     var mask = qa.gt(0.5);
     return img.updateMask(mask);
   });
   
-  var median = filtered.select('CO_column_number_density')
+  var median = filtered.select('CH4_column_volume_mixing_ratio_dry_air')
     .median()
     .clip(nepal)
     .set('year', year)
@@ -56,6 +60,7 @@ var createMonthlyComposite = function(year, month) {
   return median;
 };
 
+// ----- GENERATE COMPOSITES -----
 var years = ee.List.sequence(2019, 2026);
 var months = ee.List.sequence(1, 12);
 var monthlyComposites = years.map(function(y) {
@@ -67,9 +72,10 @@ var monthlyCollection = ee.ImageCollection.fromImages(monthlyComposites)
   })
   .filter(ee.Filter.gt('num_bands', 0));
 
-// Zonal stats by physiographic zone
+// ----- ZONAL STATISTICS -----
 var computeZonalStats = function(image) {
-  var year = image.get('year'); var month = image.get('month');
+  var year = image.get('year');
+  var month = image.get('month');
   var zoneList = ee.List([1, 2, 3, 4, 5]);
   var zoneNames = ee.List(['Terai', 'Siwalik', 'Middle_Mountains', 'High_Mountains', 'High_Himal']);
   
@@ -81,13 +87,13 @@ var computeZonalStats = function(image) {
         .combine(ee.Reducer.stdDev(), '', true).combine(ee.Reducer.count(), '', true),
       geometry: nepalGeom, scale: SCALE, maxPixels: 1e10,
     });
+    var zoneName = zoneNames.get(ee.Number(zoneId).subtract(1));
     return ee.Feature(null, {
-      'year': year, 'month': month,
-      'zone': zoneNames.get(ee.Number(zoneId).subtract(1)),
-      'CO_mean': result.get('CO_column_number_density_mean'),
-      'CO_median': result.get('CO_column_number_density_median'),
-      'CO_stdDev': result.get('CO_column_number_density_stdDev'),
-      'CO_count': result.get('CO_column_number_density_count'),
+      'year': year, 'month': month, 'zone': zoneName,
+      'CH4_mean': result.get('CH4_column_volume_mixing_ratio_dry_air_mean'),
+      'CH4_median': result.get('CH4_column_volume_mixing_ratio_dry_air_median'),
+      'CH4_stdDev': result.get('CH4_column_volume_mixing_ratio_dry_air_stdDev'),
+      'CH4_count': result.get('CH4_column_volume_mixing_ratio_dry_air_count'),
     });
   });
   return ee.FeatureCollection(stats);
@@ -95,6 +101,7 @@ var computeZonalStats = function(image) {
 
 var allZonalStats = monthlyCollection.map(computeZonalStats).flatten();
 
+// Province stats
 var computeProvinceStats = function(image) {
   var year = image.get('year'); var month = image.get('month');
   var stats = image.reduceRegions({
@@ -107,26 +114,31 @@ var computeProvinceStats = function(image) {
 };
 var allProvinceStats = monthlyCollection.map(computeProvinceStats).flatten();
 
-// Visualization
-var coViz = {min: 0.02, max: 0.05, palette: ['#FFF3E0', '#FFB74D', '#F4511E', '#B71C1C']};
+// ----- VISUALIZATION -----
+var ch4Viz = {min: 1750, max: 1950, palette: ['#E0F7FA', '#00BCD4', '#009688', '#388E3C']};
 Map.centerObject(nepal, 7);
-Map.addLayer(monthlyCollection.filter(ee.Filter.eq('year', 2024)).mean(), coViz, 'CO Annual Mean 2024');
+Map.addLayer(monthlyCollection.filter(ee.Filter.eq('year', 2024)).mean(), ch4Viz, 'CH4 Annual Mean 2024');
 
-// Exports
+// ----- EXPORTS -----
 Export.table.toDrive({
-  collection: allZonalStats, description: 'CO_monthly_zonal_stats_physiographic',
-  folder: EXPORT_FOLDER, fileNamePrefix: 'CO_monthly_zonal_physiographic', fileFormat: 'CSV',
+  collection: allZonalStats,
+  description: 'CH4_monthly_zonal_stats_physiographic',
+  folder: EXPORT_FOLDER, fileNamePrefix: 'CH4_monthly_zonal_physiographic', fileFormat: 'CSV',
 });
+
 Export.table.toDrive({
-  collection: allProvinceStats, description: 'CO_monthly_zonal_stats_province',
-  folder: EXPORT_FOLDER, fileNamePrefix: 'CO_monthly_zonal_province', fileFormat: 'CSV',
+  collection: allProvinceStats,
+  description: 'CH4_monthly_zonal_stats_province',
+  folder: EXPORT_FOLDER, fileNamePrefix: 'CH4_monthly_zonal_province', fileFormat: 'CSV',
 });
+
 for (var yr = 2019; yr <= 2026; yr++) {
   Export.image.toDrive({
     image: monthlyCollection.filter(ee.Filter.eq('year', yr)).mean(),
-    description: 'CO_annual_mean_' + yr, folder: EXPORT_FOLDER,
-    fileNamePrefix: 'CO_annual_mean_' + yr, region: nepalGeom,
+    description: 'CH4_annual_mean_' + yr, folder: EXPORT_FOLDER,
+    fileNamePrefix: 'CH4_annual_mean_' + yr, region: nepalGeom,
     scale: SCALE, crs: 'EPSG:4326', maxPixels: 1e10,
   });
 }
-print('CO Monthly Collection Size:', monthlyCollection.size());
+
+print('CH4 Monthly Collection Size:', monthlyCollection.size());
