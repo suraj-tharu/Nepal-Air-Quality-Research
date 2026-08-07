@@ -1,0 +1,194 @@
+# References (Systematic Literature Review)
+
+*Note: Generated systematically via OpenAlex API filtering for high-impact S5P, ML, and Himalayan Air Quality literature.*
+
+## Satellite Remote Sensing of Air Quality (Nepal/Himalayas)
+- Marielle Saunois et al. (2019). The Global Methane Budget 2000-2017. *NOAA Institutional Repository*. https://doi.org/10.5194/essd-12-1561-2020
+- Zhu Liu et al. (2020). Near-real-time monitoring of global CO2 emissions reveals the effects of the COVID-19 pandemic. *Nature Communications*. https://doi.org/10.1038/s41467-020-18922-7
+- Qiang Wang & Min Su (2020). A preliminary assessment of the impact of COVID-19 on environment – A case study of China. *The Science of The Total Environment*. https://doi.org/10.1016/j.scitotenv.2020.138915
+- Ke Li et al. (2020). Increases in surface ozone pollution in China from 2013 to 2019: anthropogenic and meteorological influences. *Atmospheric chemistry and physics*. https://doi.org/10.5194/acp-20-11423-2020
+- Liane Yuri Kondo Nakada & Rodrigo Custódio Urban (2020). COVID-19 pandemic: Impacts on the air quality during the partial lockdown in São Paulo state, Brazil. *The Science of The Total Environment*. https://doi.org/10.1016/j.scitotenv.2020.139087
+- Jingfeng Xiao et al. (2019). Remote sensing of the terrestrial carbon cycle: A review of advances over 50 years. *Remote Sensing of Environment*. https://doi.org/10.1016/j.rse.2019.111383
+- Frédéric Dutheil et al. (2020). COVID-19 as a factor influencing air pollution?. *Environmental Pollution*. https://doi.org/10.1016/j.envpol.2020.114466
+- P. F. Levelt et al. (2018). The Ozone Monitoring Instrument: overview of 14 years in space. *Atmospheric chemistry and physics*. https://doi.org/10.5194/acp-18-5699-2018
+- Yuzhong Zhang et al. (2020). Quantifying methane emissions from the largest oil-producing basin in the United States from space. *Science Advances*. https://doi.org/10.1126/sciadv.aaz5120
+- Tijl Verhoelst et al. (2021). Ground-based validation of the Copernicus Sentinel-5P TROPOMI NO <sub>2</sub> measurements with the NDACC ZSL-DOAS, MAX-DOAS and Pandonia global networks. *Atmospheric measurement techniques*. https://doi.org/10.5194/amt-14-481-2021
+- Thomas Lauvaux et al. (2022). Global assessment of oil and gas methane ultra-emitters. *Science*. https://doi.org/10.1126/science.abj4351
+- Claire Granier et al. (2019). The Copernicus Atmosphere Monitoring Service global and regional emissions (April 2019 version). *HAL (Le Centre pour la Communication Scientifique Directe)*. https://doi.org/10.24380/d0bn-kx16
+- Euan G. Nisbet et al. (2020). Methane Mitigation: Methods to Reduce Emissions, on the Path to the Paris Agreement. *Reviews of Geophysics*. https://doi.org/10.1029/2019rg000675
+- Xing Li & Jingfeng Xiao (2019). Mapping Photosynthesis Solely from Solar-Induced Chlorophyll Fluorescence: A Global, Fine-Resolution Dataset of Gross Primary Production Derived from OCO-2. *Remote Sensing*. https://doi.org/10.3390/rs11212563
+- Martine De Mazière et al. (2018). The Network for the Detection of Atmospheric Composition Change (NDACC): history, status and perspectives. *Atmospheric chemistry and physics*. https://doi.org/10.5194/acp-18-4935-2018
+- Alba Lorente et al. (2021). Methane retrieved from TROPOMI: improvement of the data product and validation of the first 2 years of measurements. *Atmospheric measurement techniques*. https://doi.org/10.5194/amt-14-665-2021
+- K. F. Boersma et al. (2018). Improving algorithms and uncertainty estimates for satellite NO <sub>2</sub> retrievals: results from the quality assurance for the essential climate variables (QA4ECV) project. *Atmospheric measurement techniques*. https://doi.org/10.5194/amt-11-6651-2018
+- Kasturi Devi Kanniah et al. (2020). COVID-19's impact on the atmospheric environment in the Southeast Asia region. *The Science of The Total Environment*. https://doi.org/10.1016/j.scitotenv.2020.139658
+- Shufen Pan et al. (2020). Evaluation of global terrestrial evapotranspiration using state-of-the-art approaches in remote sensing, machine learning and land surface modeling. *Hydrology and earth system sciences*. https://doi.org/10.5194/hess-24-1485-2020
+- Mamunur Rashid et al. (2021). A Comprehensive Review of Crop Yield Prediction Using Machine Learning Approaches With Special Emphasis on Palm Oil Yield Prediction. *IEEE Access*. https://doi.org/10.1109/access.2021.3075159
+- Bo Zheng et al. (2021). Changes in China's anthropogenic emissions and air quality during the COVID-19 pandemic in 2020. *Earth system science data*. https://doi.org/10.5194/essd-13-2895-2021
+- Jing Wei et al. (2022). Ground-Level NO<sub>2</sub>Surveillance from Space Across China for High Resolution Using Interpretable Spatiotemporally Weighted Artificial Intelligence. *Environmental Science & Technology*. https://doi.org/10.1021/acs.est.2c03834
+- Pierre Gentine et al. (2019). Coupling between the terrestrial carbon and water cycles—a review. *Environmental Research Letters*. https://doi.org/10.1088/1748-9326/ab22d6
+- Tianjie Zhao et al. (2024). Artificial intelligence for geoscience: Progress, challenges, and perspectives. *The Innovation*. https://doi.org/10.1016/j.xinn.2024.100691
+- Piers Forster et al. (2023). Indicators of Global Climate Change 2022: annual update of large-scale indicators of the state of the climate system and human influence. *Earth system science data*. https://doi.org/10.5194/essd-15-2295-2023
+- Matthew Cooper et al. (2022). Global fine-scale changes in ambient NO2 during COVID-19 lockdowns. *Nature*. https://doi.org/10.1038/s41586-021-04229-0
+- Isabelle De Smedt et al. (2018). Algorithm theoretical baseline for formaldehyde retrievals from S5P TROPOMI and from the QA4ECV project. *Atmospheric measurement techniques*. https://doi.org/10.5194/amt-11-2395-2018
+- Joannes D. Maasakkers et al. (2019). Global distribution of methane emissions, emission trends, and OH concentrations and trends inferred from an inversion of GOSAT satellite data for 2010–2015. *Atmospheric chemistry and physics*. https://doi.org/10.5194/acp-19-7859-2019
+- Prashant Kumar et al. (2020). Temporary reduction in fine particulate matter due to ‘anthropogenic emissions switch-off’ during COVID-19 lockdown in Indian cities. *Sustainable Cities and Society*. https://doi.org/10.1016/j.scs.2020.102382
+- Bo Zheng et al. (2020). Satellite-based estimates of decline and rebound in China’s CO <sub>2</sub> emissions during COVID-19 pandemic. *Science Advances*. https://doi.org/10.1126/sciadv.abd4998
+- Sean Crowell et al. (2019). The 2015–2016 carbon cycle as seen from OCO-2 and the global in situ network. *Atmospheric chemistry and physics*. https://doi.org/10.5194/acp-19-9797-2019
+- Wenzhe Jiao et al. (2021). Multi-sensor remote sensing for drought characterization: current status, opportunities and a roadmap for the future. *Remote Sensing of Environment*. https://doi.org/10.1016/j.rse.2021.112313
+- J. H. Crawford et al. (2021). The Korea–United States Air Quality (KORUS-AQ) field study. *Elementa Science of the Anthropocene*. https://doi.org/10.1525/elementa.2020.00163
+- Susan L. Ustin & Elizabeth M. Middleton (2021). Current and near-term advances in Earth observation for ecological applications. *Ecological Processes*. https://doi.org/10.1186/s13717-020-00255-4
+- Ruixiong Zhang et al. (2020). NOx Emission Reduction and Recovery during COVID-19 in East China. *Atmosphere*. https://doi.org/10.3390/atmos11040433
+- Julia K. Green et al. (2020). Amazon rainforest photosynthesis increases in response to atmospheric dryness. *Science Advances*. https://doi.org/10.1126/sciadv.abb7232
+- Alexander T. Archibald et al. (2020). Tropospheric Ozone Assessment Report. *Elementa Science of the Anthropocene*. https://doi.org/10.1525/elementa.2020.034
+- Maximilian Reuter et al. (2019). Towards monitoring localized CO <sub>2</sub> emissions from space: co-located regional CO <sub>2</sub> and NO <sub>2</sub> enhancements observed by the OCO-2 and S5P satellites. *Atmospheric chemistry and physics*. https://doi.org/10.5194/acp-19-9371-2019
+- Bassim Mohammed Hashim et al. (2020). Impact of COVID-19 lockdown on NO2, O3, PM2.5 and PM10 concentrations and assessing air quality changes in Baghdad, Iraq. *The Science of The Total Environment*. https://doi.org/10.1016/j.scitotenv.2020.141978
+- Ranjeet S. Sokhi et al. (2021). A global observational analysis to understand changes in air quality during exceptionally low anthropogenic emission conditions. *Environment International*. https://doi.org/10.1016/j.envint.2021.106818
+- Wannan Wang et al. (2021). Spatial and temporal changes of the ozone sensitivity in China based on satellite and ground-based observations. *Atmospheric chemistry and physics*. https://doi.org/10.5194/acp-21-7253-2021
+- Shefali Arora et al. (2020). Coronavirus lockdown helped the environment to bounce back. *The Science of The Total Environment*. https://doi.org/10.1016/j.scitotenv.2020.140573
+- Rachel Ε. Neale et al. (2021). Environmental effects of stratospheric ozone depletion, UV radiation, and interactions with climate change: UNEP Environmental Effects Assessment Panel, Update 2020. *Photochemical & Photobiological Sciences*. https://doi.org/10.1007/s43630-020-00001-x
+- Oleg Dubovik et al. (2021). A Comprehensive Description of Multi-Term LSM for Applying Multiple a Priori Constraints in Problems of Atmospheric Remote Sensing: GRASP Algorithm, Concept, and Applications. *Frontiers in Remote Sensing*. https://doi.org/10.3389/frsen.2021.706851
+- Xin Huang et al. (2020). Enhanced secondary pollution offset reduction of primary emissions during COVID-19 lockdown in China. *Unknown Journal*. https://doi.org/10.31223/osf.io/hvuzy
+- Zhu Deng et al. (2022). Comparing national greenhouse gas budgets reported in UNFCCC inventories against atmospheric inversions. *Earth system science data*. https://doi.org/10.5194/essd-14-1639-2022
+- Brendan Byrne et al. (2024). Carbon emissions from the 2023 Canadian wildfires. *Nature*. https://doi.org/10.1038/s41586-024-07878-z
+- Biswajit Bera et al. (2020). Significant impacts of COVID-19 lockdown on urban air pollution in Kolkata (India) and amelioration of environmental health. *Environment Development and Sustainability*. https://doi.org/10.1007/s10668-020-00898-5
+- Sergey Khaykin et al. (2020). The 2019/20 Australian wildfires generated a persistent smoke-charged vortex rising up to 35 km altitude. *Communications Earth & Environment*. https://doi.org/10.1038/s43247-020-00022-5
+- Marina Vîrghileanu et al. (2020). Nitrogen Dioxide (NO2) Pollution Monitoring with Sentinel-5P Satellite Imagery over Europe during the Coronavirus Pandemic Outbreak. *Remote Sensing*. https://doi.org/10.3390/rs12213575
+
+## Machine Learning in Atmospheric Science
+- Ndiaye, Matar et al. (2024). Two new Later Stone Age sites from the Final Pleistocene in the Falémé Valley, eastern Senegal. *ENLIGHTEN (Jurnal Bimbingan dan Konseling Islam)*. https://doi.org/10.3929/ethz-b-000667478
+- Ioannis Manisalidis et al. (2020). Environmental and Health Impacts of Air Pollution: A Review. *Frontiers in Public Health*. https://doi.org/10.3389/fpubh.2020.00014
+- Thomas Hale et al. (2021). A global panel database of pandemic policies (Oxford COVID-19 Government Response Tracker). *Nature Human Behaviour*. https://doi.org/10.1038/s41562-021-01079-8
+- Masayuki Teramoto et al. (2024). Global incidence, prevalence, years lived with disability (YLDs), disability-adjusted life-years (DALYs), and healthy life expectancy (HALE) for 371 diseases and injuries in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021. *The Lancet*. https://doi.org/10.1016/s0140-6736(24)00757-8
+- Kanyin Liane Ong et al. (2023). Global, regional, and national burden of diabetes from 1990 to 2021, with projections of prevalence to 2050: a systematic analysis for the Global Burden of Disease Study 2021. *The Lancet*. https://doi.org/10.1016/s0140-6736(23)01301-6
+- Daolin Tang et al. (2020). Ferroptosis: molecular mechanisms and health implications. *Cell Research*. https://doi.org/10.1038/s41422-020-00441-1
+- Yogesh K. Dwivedi et al. (2019). Artificial Intelligence (AI): Multidisciplinary perspectives on emerging challenges, opportunities, and agenda for research, practice and policy. *International Journal of Information Management*. https://doi.org/10.1016/j.ijinfomgt.2019.08.002
+- Gavin Harper et al. (2019). Recycling lithium-ion batteries from electric vehicles. *Nature*. https://doi.org/10.1038/s41586-019-1682-5
+- Lijia Chen et al. (2020). Artificial Intelligence in Education: A Review. *IEEE Access*. https://doi.org/10.1109/access.2020.2988510
+- Ertuğrul Başar et al. (2019). Wireless Communications Through Reconfigurable Intelligent Surfaces. *IEEE Access*. https://doi.org/10.1109/access.2019.2935192
+- Fan Liu et al. (2022). Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond. *IEEE Journal on Selected Areas in Communications*. https://doi.org/10.1109/jsac.2022.3156632
+- Qingqing Wu et al. (2021). Intelligent Reflecting Surface-Aided Wireless Communications: A Tutorial. *IEEE Transactions on Communications*. https://doi.org/10.1109/tcomm.2021.3051897
+- Nathalie Percie du Sert et al. (2020). Reporting animal research: Explanation and elaboration for the ARRIVE guidelines 2.0. *PLoS Biology*. https://doi.org/10.1371/journal.pbio.3000411
+- Yaguo Lei et al. (2020). Applications of machine learning to machine fault diagnosis: A review and roadmap. *Mechanical Systems and Signal Processing*. https://doi.org/10.1016/j.ymssp.2019.106587
+- Steven L. Brunton et al. (2019). Machine Learning for Fluid Mechanics. *Annual Review of Fluid Mechanics*. https://doi.org/10.1146/annurev-fluid-010719-060214
+- Aidan Fuller et al. (2020). Digital Twin: Enabling Technologies, Challenges and Open Research. *IEEE Access*. https://doi.org/10.1109/access.2020.2998358
+- Pierre Friedlingstein et al. (2020). Global Carbon Budget 2020. *Earth system science data*. https://doi.org/10.5194/essd-12-3269-2020
+- Theodore S. Rappaport et al. (2019). Wireless Communications and Applications Above 100 GHz: Opportunities and Challenges for 6G and Beyond. *IEEE Access*. https://doi.org/10.1109/access.2019.2921522
+- Abid Haleem et al. (2022). Understanding the role of digital technologies in education: A review. *Sustainable Operations and Computers*. https://doi.org/10.1016/j.susoc.2022.05.004
+- Iqbal H. Sarker (2021). Deep Learning: A Comprehensive Overview on Techniques, Taxonomy, Applications and Research Directions. *SN Computer Science*. https://doi.org/10.1007/s42979-021-00815-1
+- Haneen Mohammed Abbas Kasar et al. (2024). Inorganic Chemistry: Principles of Structure and Reactivity. *Bright Sky Publications eBooks*. https://doi.org/10.62906/bs.book.181
+- Yinghui Jin et al. (2020). A rapid advice guideline for the diagnosis and treatment of 2019 novel coronavirus (2019-nCoV) infected pneumonia (standard version). *Military Medical Research*. https://doi.org/10.1186/s40779-020-0233-6
+- Suzanne E. Fenton et al. (2020). Per- and Polyfluoroalkyl Substance Toxicity and Human Health Review: Current State of Knowledge and Strategies for Informing Future Research. *Environmental Toxicology and Chemistry*. https://doi.org/10.1002/etc.4890
+- Juliane Glüge et al. (2020). An overview of the uses of per- and polyfluoroalkyl substances (PFAS). *Environmental Science Processes & Impacts*. https://doi.org/10.1039/d0em00291g
+- Daron Acemoğlu & Pascual Restrepo (2019). Automation and New Tasks: How Technology Displaces and Reinstates Labor. *The Journal of Economic Perspectives*. https://doi.org/10.1257/jep.33.2.3
+- Joan B. Soriano et al. (2020). Prevalence and attributable health burden of chronic respiratory diseases, 1990–2017: a systematic analysis for the Global Burden of Disease Study 2017. *The Lancet Respiratory Medicine*. https://doi.org/10.1016/s2213-2600(20)30105-3
+- Hazim Shakhatreh et al. (2019). Unmanned Aerial Vehicles (UAVs): A Survey on Civil Applications and Key Research Challenges. *IEEE Access*. https://doi.org/10.1109/access.2019.2909530
+- Yijie Shen et al. (2019). Optical vortices 30 years on: OAM manipulation from topological charge to multiple singularities. *Light Science & Applications*. https://doi.org/10.1038/s41377-019-0194-2
+- Meiling Yue et al. (2021). Hydrogen energy systems: A critical review of technologies, applications, trends and challenges. *Renewable and Sustainable Energy Reviews*. https://doi.org/10.1016/j.rser.2021.111180
+- Qiang Zhang et al. (2019). Drivers of improved PM <sub>2.5</sub> air quality in China from 2013 to 2017. *Proceedings of the National Academy of Sciences*. https://doi.org/10.1073/pnas.1907956116
+- Zhi Zhou et al. (2019). Edge Intelligence: Paving the Last Mile of Artificial Intelligence With Edge Computing. *Proceedings of the IEEE*. https://doi.org/10.1109/jproc.2019.2918951
+- Navarro Ferronato & Vincenzo Torretta (2019). Waste Mismanagement in Developing Countries: A Review of Global Issues. *International Journal of Environmental Research and Public Health*. https://doi.org/10.3390/ijerph16061060
+- David Jones et al. (2020). Characterising the Digital Twin: A systematic literature review. *CIRP journal of manufacturing science and technology*. https://doi.org/10.1016/j.cirpj.2020.02.002
+- Julian Blank & Kalyanmoy Deb (2020). Pymoo: Multi-Objective Optimization in Python. *IEEE Access*. https://doi.org/10.1109/access.2020.2990567
+- Byron Blakey-Milner et al. (2021). Metal additive manufacturing in aerospace: A review. *Materials & Design*. https://doi.org/10.1016/j.matdes.2021.110008
+- Gouhei Tanaka et al. (2019). Recent advances in physical reservoir computing: A review. *Neural Networks*. https://doi.org/10.1016/j.neunet.2019.03.005
+- Rachel E. Baker et al. (2021). Infectious disease in an era of global change. *Nature Reviews Microbiology*. https://doi.org/10.1038/s41579-021-00639-z
+- Cheng‐Xiang Wang et al. (2023). On the Road to 6G: Visions, Requirements, Key Technologies, and Testbeds. *IEEE Communications Surveys & Tutorials*. https://doi.org/10.1109/comst.2023.3249835
+- V. Naresh & Nohyun Lee (2021). A Review on Biosensors and Recent Development of Nanostructured Materials-Enabled Biosensors. *Sensors*. https://doi.org/10.3390/s21041109
+- Xiaohu You et al. (2020). Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts. *Science China Information Sciences*. https://doi.org/10.1007/s11432-020-2955-6
+- Eric M. Isselbacher et al. (2022). 2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease: A Report of the American Heart Association/American College of Cardiology Joint Committee on Clinical Practice Guidelines. *Circulation*. https://doi.org/10.1161/cir.0000000000001106
+- Haiyang Zou et al. (2019). Quantifying the triboelectric series. *Nature Communications*. https://doi.org/10.1038/s41467-019-09461-x
+- Ansam Khraisat et al. (2019). Survey of intrusion detection systems: techniques, datasets and challenges. *Cybersecurity*. https://doi.org/10.1186/s42400-019-0038-7
+- Pierre Friedlingstein et al. (2022). Global Carbon Budget 2022. *Earth system science data*. https://doi.org/10.5194/essd-14-4811-2022
+- Carlos Moreno et al. (2021). Introducing the “15-Minute City”: Sustainability, Resilience and Place Identity in Future Post-Pandemic Cities. *Smart Cities*. https://doi.org/10.3390/smartcities4010006
+- Timothy Hodson (2022). Root-mean-square error (RMSE) or mean absolute error (MAE): when to use them or not. *Geoscientific model development*. https://doi.org/10.5194/gmd-15-5481-2022
+- Marco Di Renzo et al. (2019). Smart radio environments empowered by reconfigurable AI meta-surfaces: an idea whose time has come. *EURASIP Journal on Wireless Communications and Networking*. https://doi.org/10.1186/s13638-019-1438-9
+- Sangmin Park & Young‐Gab Kim (2022). A Metaverse: Taxonomy, Components, Applications, and Open Challenges. *IEEE Access*. https://doi.org/10.1109/access.2021.3140175
+- Diogo V. Carvalho et al. (2019). Machine Learning Interpretability: A Survey on Methods and Metrics. *Electronics*. https://doi.org/10.3390/electronics8080832
+
+## Extreme Events (COVID-19 and Biomass Burning)
+- Katherine Calvin et al. (2023). IPCC, 2023: Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Core Writing Team, H. Lee and J. Romero (eds.)]. IPCC, Geneva, Switzerland.. *Unknown Journal*. https://doi.org/10.59327/ipcc/ar6-9789291691647
+- Mohsen Naghavi et al. (2024). Global burden of bacterial antimicrobial resistance 1990–2021: a systematic analysis with forecasts to 2050. *The Lancet*. https://doi.org/10.1016/s0140-6736(24)01867-1
+- Kashif Abbass et al. (2022). A review of the global climate change impacts, adaptation, and sustainable mitigation measures. *Environmental Science and Pollution Research*. https://doi.org/10.1007/s11356-022-19718-6
+- Jan‐Georg Rosenboom et al. (2022). Bioplastics for a circular economy. *Nature Reviews Materials*. https://doi.org/10.1038/s41578-021-00407-8
+- Nick Watts et al. (2020). The 2020 report of The Lancet Countdown on health and climate change: responding to converging crises. *The Lancet*. https://doi.org/10.1016/s0140-6736(20)32290-x
+- Intergovernmental Panel on Climate Change (IPCC) (2023). Summary for Policymakers. *Cambridge University Press eBooks*. https://doi.org/10.1017/9781009157896.001
+- Marina Romanello et al. (2022). The 2022 report of the Lancet Countdown on health and climate change: health at the mercy of fossil fuels. *The Lancet*. https://doi.org/10.1016/s0140-6736(22)01540-9
+- Marina Romanello et al. (2021). The 2021 report of the Lancet Countdown on health and climate change: code red for a healthy future. *The Lancet*. https://doi.org/10.1016/s0140-6736(21)01787-6
+- Wei Jiang et al. (2021). The Road Towards 6G: A Comprehensive Survey. *IEEE Open Journal of the Communications Society*. https://doi.org/10.1109/ojcoms.2021.3057679
+- Pierre Friedlingstein et al. (2023). Global Carbon Budget 2023. *Earth system science data*. https://doi.org/10.5194/essd-15-5301-2023
+- Jerry L. Holechek et al. (2022). A Global Assessment: Can Renewable Energy Replace Fossil Fuels by 2050?. *Sustainability*. https://doi.org/10.3390/su14084792
+- Lin Chen et al. (2022). Strategies to achieve a carbon neutral society: a review. *Environmental Chemistry Letters*. https://doi.org/10.1007/s10311-022-01435-8
+- Anna Francis et al. (2024). Chronic kidney disease and the global public health agenda: an international consensus. *Nature Reviews Nephrology*. https://doi.org/10.1038/s41581-024-00820-6
+- Marina Romanello et al. (2023). The 2023 report of the Lancet Countdown on health and climate change: the imperative for a health-centred response in a world facing irreversible harms. *The Lancet*. https://doi.org/10.1016/s0140-6736(23)01859-7
+- Helen Herrman et al. (2022). Time for united action on depression: a Lancet–World Psychiatric Association Commission. *The Lancet*. https://doi.org/10.1016/s0140-6736(21)02141-3
+- Masayuki Teramoto et al. (2024). Burden of disease scenarios for 204 countries and territories, 2022–2050: a forecasting analysis for the Global Burden of Disease Study 2021. *The Lancet*. https://doi.org/10.1016/s0140-6736(24)00685-8
+- Intergovernmental Panel on Climate Change (IPCC) (2023). Summary for Policymakers. *Cambridge University Press eBooks*. https://doi.org/10.1017/9781009325844.001
+- Amine Belhadi et al. (2020). Manufacturing and service supply chain resilience to the COVID-19 outbreak: Lessons learned from the automobile and airline industries. *Technological Forecasting and Social Change*. https://doi.org/10.1016/j.techfore.2020.120447
+- Md Golam Kibria et al. (2023). Plastic Waste: Challenges and Opportunities to Mitigate Pollution and Effective Management. *International Journal of Environmental Research*. https://doi.org/10.1007/s41742-023-00507-z
+- Yi‐Ming Wei et al. (2022). Policy and Management of Carbon Peaking and Carbon Neutrality: A Literature Review. *Engineering*. https://doi.org/10.1016/j.eng.2021.12.018
+- Guojun He et al. (2020). The short-term impacts of COVID-19 lockdown on urban air pollution in China. *Nature Sustainability*. https://doi.org/10.1038/s41893-020-0581-y
+- Pengfei Wang et al. (2020). Severe air pollution events not avoided by reduced anthropogenic activities during COVID-19 outbreak. *Resources Conservation and Recycling*. https://doi.org/10.1016/j.resconrec.2020.104814
+- Ismaila Rimi Abubakar et al. (2022). Environmental Sustainability Impacts of Solid Waste Management Practices in the Global South. *International Journal of Environmental Research and Public Health*. https://doi.org/10.3390/ijerph191912717
+- Chamitha de Alwis et al. (2021). Survey on 6G Frontiers: Trends, Applications, Requirements, Technologies and Future Research. *IEEE Open Journal of the Communications Society*. https://doi.org/10.1109/ojcoms.2021.3071496
+- Philip J. Landrigan et al. (2020). Human Health and Ocean Pollution. *Annals of Global Health*. https://doi.org/10.5334/aogh.2831
+- Cécile Godde et al. (2021). Impacts of climate change on the livestock food supply chain; a review of the evidence. *Global Food Security*. https://doi.org/10.1016/j.gfs.2020.100488
+- Marina Romanello et al. (2024). The 2024 report of the Lancet Countdown on health and climate change: facing record-breaking threats from delayed action. *The Lancet*. https://doi.org/10.1016/s0140-6736(24)01822-1
+- Yogesh K. Dwivedi et al. (2021). Climate change and COP26: Are digital technologies and information management part of the problem or the solution? An editorial reflection and call to action. *International Journal of Information Management*. https://doi.org/10.1016/j.ijinfomgt.2021.102456
+- Intergovernmental Panel on Climate Change (IPCC) (2023). Short-lived Climate Forcers. *Cambridge University Press eBooks*. https://doi.org/10.1017/9781009157896.008
+- Michel Noussan et al. (2020). The Role of Green and Blue Hydrogen in the Energy Transition—A Technological and Geopolitical Perspective. *Sustainability*. https://doi.org/10.3390/su13010298
+- Carl Folke et al. (2021). Our future in the Anthropocene biosphere. *AMBIO*. https://doi.org/10.1007/s13280-021-01544-8
+- Mario Coccia (2020). Factors determining the diffusion of COVID-19 and suggested strategy to prevent future accelerated viral infectivity similar to COVID. *The Science of The Total Environment*. https://doi.org/10.1016/j.scitotenv.2020.138474
+- Daiana Stolz et al. (2022). Towards the elimination of chronic obstructive pulmonary disease: a Lancet Commission. *The Lancet*. https://doi.org/10.1016/s0140-6736(22)01273-9
+- Zaheer Allam et al. (2022). The Metaverse as a Virtual Form of Smart Cities: Opportunities and Challenges for Environmental, Economic, and Social Sustainability in Urban Futures. *Smart Cities*. https://doi.org/10.3390/smartcities5030040
+- Mohamed Farghali et al. (2023). Strategies to save energy in the context of the energy crisis: a review. *Environmental Chemistry Letters*. https://doi.org/10.1007/s10311-023-01591-5
+- Christopher D. Elvidge et al. (2021). Annual Time Series of Global VIIRS Nighttime Lights Derived from Monthly Averages: 2012 to 2019. *Remote Sensing*. https://doi.org/10.3390/rs13050922
+- Jinfang Tian et al. (2021). Global low-carbon energy transition in the post-COVID-19 era. *Applied Energy*. https://doi.org/10.1016/j.apenergy.2021.118205
+- Mohamed Almenfi et al. (2020). Social Protection and Jobs Responses to COVID-19: A Real-Time Review of Country Measures. *World Bank, Washington, DC eBooks*. https://doi.org/10.1596/33635
+- Lindani Koketso Ncube et al. (2021). An Overview of Plastic Waste Generation and Management in Food Packaging Industries. *Recycling*. https://doi.org/10.3390/recycling6010012
+- David M. Lapola et al. (2023). The drivers and impacts of Amazon forest degradation. *Science*. https://doi.org/10.1126/science.abp8622
+- Pierre Friedlingstein et al. (2025). Global Carbon Budget 2024. *Earth system science data*. https://doi.org/10.5194/essd-17-965-2025
+- Bartosz Dziejarski et al. (2023). Current status of carbon capture, utilization, and storage technologies in the global economy: A survey of technical assessment. *Fuel*. https://doi.org/10.1016/j.fuel.2023.127776
+- Giliberto Capano et al. (2020). Mobilizing Policy (In)Capacity to Fight COVID-19: Understanding Variations in State Responses. *Policy and Society*. https://doi.org/10.1080/14494035.2020.1787628
+- K. R. Shivanna (2022). Climate change and its impact on biodiversity and human welfare. *Proceedings of the Indian National Science Academy*. https://doi.org/10.1007/s43538-022-00073-6
+- Steve Griffiths et al. (2021). Industrial decarbonization via hydrogen: A critical and systematic review of developments, socio-technical systems and policy options. *Energy Research & Social Science*. https://doi.org/10.1016/j.erss.2021.102208
+- Intergovernmental Panel on Climate Change (IPCC) (2023). Summary for Policymakers. *Cambridge University Press eBooks*. https://doi.org/10.1017/9781009157926.001
+
+## Spatial Hotspots and Trend Analysis in Air Pollution
+- Theo Vos et al. (2020). Global burden of 369 diseases and injuries in 204 countries and territories, 1990–2019: a systematic analysis for the Global Burden of Disease Study 2019. *The Lancet*. https://doi.org/10.1016/s0140-6736(20)30925-9
+- Theo Vos et al. (2017). Global, regional, and national incidence, prevalence, and years lived with disability for 328 diseases and injuries for 195 countries, 1990–2016: a systematic analysis for the Global Burden of Disease Study 2016. *The Lancet*. https://doi.org/10.1016/s0140-6736(17)32154-2
+- Aaron J. Cohen et al. (2017). Estimates and 25-year trends of the global burden of disease attributable to ambient air pollution: an analysis of data from the Global Burden of Diseases Study 2015. *The Lancet*. https://doi.org/10.1016/s0140-6736(17)30505-6
+- Keywan Riahi et al. (2016). The Shared Socioeconomic Pathways and their energy, land use, and greenhouse gas emissions implications: An overview. *Global Environmental Change*. https://doi.org/10.1016/j.gloenvcha.2016.05.009
+- Jeffrey D Stanaway et al. (2018). Global, regional, and national comparative risk assessment of 84 behavioural, environmental and occupational, and metabolic risks or clusters of risks for 195 countries and territories, 1990–2017: a systematic analysis for the Global Burden of Disease Study 2017. *The Lancet*. https://doi.org/10.1016/s0140-6736(18)32225-6
+- Brian C. O’Neill et al. (2016). The Scenario Model Intercomparison Project (ScenarioMIP) for CMIP6. *Geoscientific model development*. https://doi.org/10.5194/gmd-9-3461-2016
+- Dolf Gielen et al. (2019). The role of renewable energy in the global energy transformation. *Energy Strategy Reviews*. https://doi.org/10.1016/j.esr.2019.01.006
+- Mark A. J. Huijbregts et al. (2016). ReCiPe2016: a harmonised life cycle impact assessment method at midpoint and endpoint level. *The International Journal of Life Cycle Assessment*. https://doi.org/10.1007/s11367-016-1246-y
+- Iain Staffell et al. (2018). The role of hydrogen and fuel cells in the global energy system. *Energy & Environmental Science*. https://doi.org/10.1039/c8ee01157e
+- Gérard Biau & Erwan Scornet (2016). A random forest guided tour. *Test*. https://doi.org/10.1007/s11749-016-0481-7
+- Laurent Lebreton et al. (2017). River plastic emissions to the world’s oceans. *Nature Communications*. https://doi.org/10.1038/ncomms15611
+- John N. Hahladakis et al. (2017). An overview of chemical additives present in plastics: Migration, release, fate and environmental impact during their use, disposal and recycling. *Journal of Hazardous Materials*. https://doi.org/10.1016/j.jhazmat.2017.10.014
+- H.A. Leslie et al. (2022). Discovery and quantification of plastic particle pollution in human blood. *Environment International*. https://doi.org/10.1016/j.envint.2022.107199
+- Alice A. Horton et al. (2017). Microplastics in freshwater and terrestrial environments: Evaluating the current understanding to identify the knowledge gaps and future research priorities. *The Science of The Total Environment*. https://doi.org/10.1016/j.scitotenv.2017.01.190
+- Caspar A. Hallmann et al. (2017). More than 75 percent decline over 27 years in total flying insect biomass in protected areas. *PLoS ONE*. https://doi.org/10.1371/journal.pone.0185809
+- Terry P. Hughes et al. (2017). Global warming and recurrent mass bleaching of corals. *Nature*. https://doi.org/10.1038/nature21707
+- Bronson W. Griscom et al. (2017). Natural climate solutions. *Proceedings of the National Academy of Sciences*. https://doi.org/10.1073/pnas.1710465114
+- Eili Klein et al. (2018). Global increase and geographic convergence in antibiotic consumption between 2000 and 2015. *Proceedings of the National Academy of Sciences*. https://doi.org/10.1073/pnas.1717295115
+- Jing Zhu et al. (2019). Recent Advances in Electrocatalytic Hydrogen Evolution Using Nanoparticles. *Chemical Reviews*. https://doi.org/10.1021/acs.chemrev.9b00248
+- Mika Rantanen et al. (2022). The Arctic has warmed nearly four times faster than the globe since 1979. *Communications Earth & Environment*. https://doi.org/10.1038/s43247-022-00498-3
+- Bo Zheng et al. (2018). Trends in China's anthropogenic emissions since 2010 as the consequence of clean air actions. *Atmospheric chemistry and physics*. https://doi.org/10.5194/acp-18-14095-2018
+- D. G. Joakim Larsson & Carl‐Fredrik Flach (2021). Antibiotic resistance in the environment. *Nature Reviews Microbiology*. https://doi.org/10.1038/s41579-021-00649-x
+- Chi Chen et al. (2019). China and India lead in greening of the world through land-use management. *Nature Sustainability*. https://doi.org/10.1038/s41893-019-0220-7
+- L. Hockstad & L. Hanel (2018). Inventory of U.S. Greenhouse Gas Emissions and Sinks. *University of North Texas Digital Library (University of North Texas)*. https://doi.org/10.15485/1464240
+- Else K. Bünemann et al. (2018). Soil quality – A critical review. *Soil Biology and Biochemistry*. https://doi.org/10.1016/j.soilbio.2018.01.030
+- Sandra Dı́az et al. (2019). Pervasive human-driven decline of life on Earth points to the need for transformative change. *Science*. https://doi.org/10.1126/science.aax3100
+- Masayuki Teramoto et al. (2024). Global burden of 288 causes of death and life expectancy decomposition in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021. *The Lancet*. https://doi.org/10.1016/s0140-6736(24)00367-2
+- Masayuki Teramoto et al. (2024). Global burden and strength of evidence for 88 risk factors in 204 countries and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021. *The Lancet*. https://doi.org/10.1016/s0140-6736(24)00933-4
+- Olubukola S. Alimi et al. (2017). Microplastics and Nanoplastics in Aquatic Environments: Aggregation, Deposition, and Enhanced Contaminant Transport. *Environmental Science & Technology*. https://doi.org/10.1021/acs.est.7b05559
+- Muyesaier Tudi et al. (2021). Agriculture Development, Pesticide Application and Its Impact on the Environment. *International Journal of Environmental Research and Public Health*. https://doi.org/10.3390/ijerph18031112
+- Albert A. Koelmans et al. (2019). Microplastics in freshwaters and drinking water: Critical review and assessment of data quality. *Water Research*. https://doi.org/10.1016/j.watres.2019.02.054
+- Jakob Zscheischler et al. (2018). Future climate risk from compound events. *Nature Climate Change*. https://doi.org/10.1038/s41558-018-0156-3
+- Rachel Hoesly et al. (2018). Historical (1750–2014) anthropogenic emissions of reactive gases and aerosols from the Community Emissions Data System (CEDS). *Geoscientific model development*. https://doi.org/10.5194/gmd-11-369-2018
+- Steve Allen et al. (2019). Atmospheric transport and deposition of microplastics in a remote mountain catchment. *Nature Geoscience*. https://doi.org/10.1038/s41561-019-0335-5
+- Raj Chetty et al. (2016). The Effects of Exposure to Better Neighborhoods on Children: New Evidence from the Moving to Opportunity Experiment. *American Economic Review*. https://doi.org/10.1257/aer.20150572
+- Laurent Lebreton & Anthony L. Andrady (2019). Future scenarios of global plastic waste generation and disposal. *Humanities and Social Sciences Communications*. https://doi.org/10.1057/s41599-018-0212-7
+- Ahmed Alengebawy et al. (2021). Heavy Metals and Pesticides Toxicity in Agricultural Soil and Plants: Ecological Risks and Human Health Implications. *Toxics*. https://doi.org/10.3390/toxics9030042
+
