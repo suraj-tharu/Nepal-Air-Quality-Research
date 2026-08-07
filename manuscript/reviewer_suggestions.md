@@ -7,7 +7,7 @@ When submitting to high-impact journals, you will often be asked to suggest 3-5 
 
 ### Strategy for Finding Reviewers
 
-Since this paper combines **Remote Sensing (Sentinel-5P)**, **Advanced Statistics (EHSA, BFAST, Wavelets)**, and **Regional Focus (Nepal/Himalayas)**, aim for a mix of these profiles.
+Since this paper combines **Remote Sensing (Sentinel-5P)**, **Advanced Statistics (Binary Segmentation, STL, Wavelets, Granger Causality)**, and **Regional Focus (Nepal/Himalayas)**, aim for a mix of these profiles.
 
 ---
 
@@ -33,16 +33,17 @@ Search for authors who have published on air pollution in the Hindu Kush Himalay
 *   Authors from ICIMOD (International Centre for Integrated Mountain Development) who haven't co-authored with you.
 *   Researchers leading studies on IGP pollution transport into the Himalayas.
 
-## Profile 3: The Spatial Statistics / GeoAI Expert
-Search for authors who specialize in the advanced methods you used (EHSA, BFAST, Wavelet Coherence in environmental contexts).
+## Profile 3: The Statistical / Timeseries Analysis Expert
+Search for authors who specialize in the advanced methods you used (Binary Segmentation, STL, Wavelet Coherence, Granger Causality in environmental contexts).
 
 **Suggested Search Terms:**
-*   `"Emerging Hotspot Analysis" AND "air pollution"`
-*   `"BFAST" AND "time series" AND "air quality"`
+*   `"Binary Segmentation" AND "time series" AND "air quality"`
+*   `"Structural breakpoint" AND "air pollution"`
 *   `"Wavelet Transform Coherence" AND "meteorology" AND "pollutants"`
+*   `"Granger Causality" AND "air quality"`
 
 *Example Profiles:*
-*   Researchers who have applied Space-Time Pattern Mining to environmental datasets (often publishing in *International Journal of Applied Earth Observation and Geoinformation*).
+*   Researchers who have applied advanced time series decomposition and causality tests to environmental datasets (often publishing in *Science of the Total Environment* or *Atmospheric Environment*).
 
 ---
 

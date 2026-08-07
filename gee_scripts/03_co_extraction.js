@@ -37,7 +37,9 @@ var createMonthlyComposite = function(year, month) {
   
   var collection = ee.ImageCollection('COPERNICUS/S5P/OFFL/L3_CO')
     .filterDate(startDate, endDate)
-    .filterBounds(nepalGeom);
+    .filterBounds(nepalGeom)
+    // Some early OFFL granules lack qa_value — filter to only those that have it
+    .filter(ee.Filter.listContains('system:band_names', 'qa_value'));
   
   // QA filtering: Sentinel-5P standard recommendation for CO is qa_value > 0.5
   var filtered = collection.map(function(img) {
