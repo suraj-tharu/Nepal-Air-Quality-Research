@@ -66,7 +66,8 @@ def run_extreme_events_analysis():
             )
             
             fig, ax = plt.subplots(figsize=(8, 6))
-            sns.boxplot(data=no2_terai, x='season', y='NO2_mean', palette='Set2', ax=ax)
+            sns.boxplot(data=no2_terai, x='season', y='NO2_mean',
+                        hue='season', palette='Set2', legend=False, ax=ax)
             ax.set_title("Terai NO2 Concentrations: Post-Monsoon Burning vs Other Seasons")
             fig.tight_layout()
             save_figure(fig, out_dir / "Crop_Residue_Burning_NO2")
@@ -82,7 +83,8 @@ def run_extreme_events_analysis():
             )
             
             fig, ax = plt.subplots(figsize=(8, 6))
-            sns.violinplot(data=no2_mm, x='season', y='NO2_mean', palette='coolwarm', ax=ax)
+            sns.violinplot(data=no2_mm, x='season', y='NO2_mean',
+                           hue='season', palette='coolwarm', legend=False, ax=ax)
             ax.set_title("Middle Mountains NO2: Winter Inversions")
             fig.tight_layout()
             save_figure(fig, out_dir / "Winter_Inversion_NO2_MM")
