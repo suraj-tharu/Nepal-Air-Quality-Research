@@ -51,14 +51,19 @@ var createMonthlyComposite = function(year, month) {
   
   var collection = ee.ImageCollection('COPERNICUS/S5P/OFFL/L3_NO2')
     .filterDate(startDate, endDate)
-    .filterBounds(nepalGeom)
-    // Some early OFFL granules lack qa_value — filter to only those that have it
-    .filter(ee.Filter.listContains('system:band_names', 'qa_value'));
+    .filterBounds(nepalGeom);
   
   // QA filtering: Sentinel-5P standard recommendation for NO2 is qa_value > 0.75
+  // Guard against early OFFL granules that lack the qa_value band.
+  // ee.Algorithms.If evaluates server-side: if band present, apply QA mask;
+  // otherwise accept the image unmasked (rare edge case ~2018-12 granules).
   var filtered = collection.map(function(img) {
-    var qa = img.select('qa_value');
-    var mask = qa.gt(0.75);
+    var hasQA = img.bandNames().contains('qa_value');
+    var mask = ee.Image(ee.Algorithms.If(
+      hasQA,
+      img.select('qa_value').gt(0.75),
+      ee.Image(1)  // no qa_value band → accept all pixels
+    ));
     return img.updateMask(mask);
   });
   
