@@ -41,38 +41,53 @@ plt.rcParams.update({
 })
 
 def create_ridge_plots(out_dir):
-    """Creates Ridge Plots (Joyplots) showing pollutant distribution across altitudinal zones."""
-    if not HAS_JOYPY:
-        return
-        
-    print("  -> Generating Ridge Plots (Joyplots)...")
+    """Creates Ridge Plots showing pollutant distribution across altitudinal zones.
+    Uses pure matplotlib KDE (joypy has a bug with matplotlib >=3.9 returning a generator).
+    """
+    from scipy.stats import gaussian_kde
+
+    print("  -> Generating Ridge Plots (KDE-based)...")
+    zone_order = ['Terai', 'Siwalik', 'Middle_Mountains', 'High_Mountains', 'High_Himal']
+    colors = plt.cm.viridis(np.linspace(0.1, 0.9, len(zone_order)))
+
     for pol in POLLUTANTS.keys():
         pol_path = PROCESSED_DIR / f"{pol}_zonal_ts.csv"
         if not pol_path.exists():
             continue
-            
+
         df = pd.read_csv(pol_path)
         mean_col = f"{pol}_mean"
-        
-        # Order zones by elevation
-        zone_order = ['Terai', 'Siwalik', 'Middle_Mountains', 'High_Mountains', 'High_Himal']
-        
-        # Filter and organize data
-        df_joy = df[['zone', mean_col]].dropna()
-        if df_joy.empty:
+        df = df[['zone', mean_col]].dropna()
+        if df.empty:
             continue
-            
-        fig, axes = joypy.joyplot(
-            df_joy, 
-            by='zone', 
-            column=mean_col,
-            ylim='own',
-            figsize=(8, 6),
-            colormap=plt.cm.viridis,
-            alpha=0.8,
-            title=f"{pol} Altitudinal Gradient (2019-2026)"
-        )
-        
+
+        n_zones = len(zone_order)
+        fig, axes = plt.subplots(n_zones, 1, figsize=(10, 7), sharex=True)
+        fig.suptitle(f"{pol} Altitudinal Gradient (2019–2026)", fontsize=14, fontweight='bold', y=1.01)
+
+        for i, (zone, color) in enumerate(zip(zone_order, colors)):
+            ax = axes[i]
+            data = df[df['zone'] == zone][mean_col].dropna().values
+            if len(data) < 5:
+                ax.set_visible(False)
+                continue
+
+            kde = gaussian_kde(data, bw_method=0.4)
+            x_range = np.linspace(data.min() * 0.9, data.max() * 1.1, 300)
+            y_kde = kde(x_range)
+
+            ax.fill_between(x_range, y_kde, alpha=0.7, color=color)
+            ax.plot(x_range, y_kde, color=color, lw=1.5)
+            ax.axvline(np.mean(data), color='white', lw=1.5, linestyle='--', alpha=0.9)
+            ax.set_ylabel(zone.replace('_', '\n'), fontsize=8, rotation=0, ha='right', va='center')
+            ax.yaxis.set_visible(False)
+            ax.spines[['top', 'right', 'left']].set_visible(False)
+            if i < n_zones - 1:
+                ax.spines['bottom'].set_visible(False)
+                ax.tick_params(bottom=False)
+
+        axes[-1].set_xlabel(f"{pol} Concentration", fontsize=10)
+        fig.tight_layout()
         save_figure(fig, out_dir / f"RidgePlot_{pol}")
 
 def create_radar_charts(out_dir):
